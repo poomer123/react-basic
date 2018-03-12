@@ -6,8 +6,7 @@ class App extends Component {
     const sum = 5 + 10
     return (
       <div className="App">
-        <Header />
-        {sum}
+        <Header title="Test Prop" sum={sum} />
       </div>
     );
   }

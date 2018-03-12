@@ -5,6 +5,8 @@ class Header extends Component {
     return (
       <div className="App">
         <h1>Header</h1>
+        <p>Prop is : {this.props.title}</p>
+        <p>{this.props.sum}</p>
       </div>
     );
   }
