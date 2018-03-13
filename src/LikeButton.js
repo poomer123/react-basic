@@ -1,19 +1,29 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Likebutton extends Component {
-    componentWillUnmount(){
-        console.log('Likebutton: componentWillUnmount')
-    }
-    render() {
-        return (
-            <button onClick={this.handleClick}>Like me</button>
-        )
-    }
+const Likebutton = (props) => {
+    return (
+        <button onClick={props.onClickLike}>Like me</button>
+    )
 
-    handleClick = () => {
-        this.props.onClickLike()
-    }
-
+    // function handleClick() {
+    //     props.onClickLike()
+    // }
 }
+
+// class Likebutton extends Component {
+//     componentWillUnmount(){
+//         console.log('Likebutton: componentWillUnmount')
+//     }
+//     render() {
+//         return (
+//             <button onClick={this.handleClick}>Like me</button>
+//         )
+//     }
+
+//     handleClick = () => {
+//         this.props.onClickLike()
+//     }
+
+// }
 
 export default Likebutton
