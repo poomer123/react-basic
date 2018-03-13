@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 
 class Likebutton extends Component {
+    componentWillUnmount(){
+        console.log('Likebutton: componentWillUnmount')
+    }
     render() {
         return (
-            <button onClick={this.handleClick}>{this.props.like ? 'Like me' : 'Dislike'}</button>
+            <button onClick={this.handleClick}>Like me</button>
         )
     }
 
     handleClick = () => {
-        this.props.onClickLike(this.props.like)
+        this.props.onClickLike()
     }
 
 }
