@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Header extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Header</h1>
-        <p>Prop is : {this.props.title}</p>
-        <p>{this.props.sum}</p>
-      </div>
-    );
-  }
+const Header = (props) => {
+  return (
+    <div style={{backgroundColor: 'blue'}}>
+      <h1>Header : {props.caption}</h1>
+    </div>
+  )
 }
 
 export default Header
